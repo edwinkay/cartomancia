@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <input
+          [(ngModel)]="terminoBusqueda1"
+          placeholder="Elegir respuesta"
+          class="form-control w-100"
+        />
+        <select [(ngModel)]="opcion1" class="form-control mb-3 w-100">
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda1)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <input
+          [(ngModel)]="terminoBusqueda2"
+          placeholder="Elegir respuesta"
+          class="form-control w-100"
+        />
+        <select [(ngModel)]="opcion2" class="form-control mb-3 w-100">
+          <option
+            *ngFor="let option of filtrarOpciones(cartas, terminoBusqueda2)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <button (click)="generar()" class="btn btn-primary">
+      Generar Respuesta
+    </button>
+  </div>
+</div>
+<div class="row mt-3">
+    <div class="col-md-12">
+      <div [ngClass]="{'border border-danger p-3': respuesta1}">
+        <span class="text-center">{{ respuesta1 }}</span>
+      </div>
+    </div>
+  </div>
