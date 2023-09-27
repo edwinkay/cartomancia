@@ -2,17 +2,35 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda1" placeholder="Buscar #1" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda1"
+          placeholder="Buscar #1"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion1" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda1)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda1)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda2" placeholder="Buscar #2" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda2"
+          placeholder="Buscar #2"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion2" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda2)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda2)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
@@ -21,17 +39,35 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda3" placeholder="Buscar #3" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda3"
+          placeholder="Buscar #3"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion3" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda3)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda3)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda4" placeholder="Buscar #4" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda4"
+          placeholder="Buscar #4"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion4" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda4)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda4)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
@@ -40,17 +76,35 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda5" placeholder="Buscar #5" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda5"
+          placeholder="Buscar #5"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion5" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda5)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda5)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        <input [(ngModel)]="terminoBusqueda6" placeholder="Buscar #6" class="form-control" />
+        <input
+          [(ngModel)]="terminoBusqueda6"
+          placeholder="Buscar #6"
+          class="form-control"
+        />
         <select [(ngModel)]="opcion6" class="form-control mb-3">
-          <option *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda6)" [value]="option">{{ option }}</option>
+          <option
+            *ngFor="let option of filtrarOpciones(elegir, terminoBusqueda6)"
+            [value]="option"
+          >
+            {{ option }}
+          </option>
         </select>
       </div>
     </div>
@@ -58,51 +112,153 @@
 
   <div class="row">
     <div class="col-md-12 text-center">
-      <button (click)="guardarOpciones()" class="btn btn-primary">Generar Respuesta</button>
+      <button (click)="guardarOpciones()" class="btn btn-primary">
+        Generar Respuesta
+      </button>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta1}">
-        <span class="text-center">{{ respuesta1 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta1 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses()" *ngIf="respuesta1">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo" class="text-center">{{
+          respuesta1
+        }}</span>
+        <span *ngIf="cambiarNegativo" class="text-center">{{
+          respuesta12
+        }}</span>
+        <span *ngIf="cambiarNegativo" class="text-center">{{
+          respuesta13
+        }}</span>
+        <span *ngIf="cambiarPositivo" class="text-center">{{
+          respuesta14
+        }}</span>
       </div>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta2}">
-        <span class="text-center">{{ respuesta2 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta2 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses2()" *ngIf="respuesta2">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo2" class="text-center">{{
+          respuesta2
+        }}</span>
+        <span *ngIf="cambiarNegativo2" class="text-center">{{
+          respuesta22
+        }}</span>
+        <span *ngIf="cambiarNegativo2" class="text-center">{{
+          respuesta23
+        }}</span>
+        <span *ngIf="cambiarPositivo2" class="text-center">{{
+          respuesta24
+        }}</span>
       </div>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta3}">
-        <span class="text-center">{{ respuesta3 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta3 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses3()" *ngIf="respuesta3">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo3" class="text-center">{{
+          respuesta3
+        }}</span>
+        <span *ngIf="cambiarNegativo3" class="text-center">{{
+          respuesta32
+        }}</span>
+        <span *ngIf="cambiarNegativo3" class="text-center">{{
+          respuesta33
+        }}</span>
+        <span *ngIf="cambiarPositivo3" class="text-center">{{
+          respuesta34
+        }}</span>
       </div>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta4}">
-        <span class="text-center">{{ respuesta4 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta4 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses4()" *ngIf="respuesta4">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo4" class="text-center">{{
+          respuesta4
+        }}</span>
+        <span *ngIf="cambiarNegativo4" class="text-center">{{
+          respuesta42
+        }}</span>
+        <span *ngIf="cambiarNegativo4" class="text-center">{{
+          respuesta43
+        }}</span>
+        <span *ngIf="cambiarPositivo4" class="text-center">{{
+          respuesta44
+        }}</span>
       </div>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta5}">
-        <span class="text-center">{{ respuesta5 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta5 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses5()" *ngIf="respuesta5">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo5" class="text-center">{{
+          respuesta5
+        }}</span>
+        <span *ngIf="cambiarNegativo5" class="text-center">{{
+          respuesta52
+        }}</span>
+        <span *ngIf="cambiarNegativo5" class="text-center">{{
+          respuesta53
+        }}</span>
+        <span *ngIf="cambiarPositivo5" class="text-center">{{
+          respuesta54
+        }}</span>
       </div>
     </div>
   </div>
   <div class="row mt-3">
     <div class="col-md-12">
-      <div [ngClass]="{'border border-danger p-3': respuesta6}">
-        <span class="text-center">{{ respuesta6 }}</span>
+      <div
+        style="display: flex; flex-direction: column"
+        [ngClass]="{ 'border border-danger p-3': respuesta6 }"
+      >
+        <button class="btn btn-primary" (click)="toggleResponses6()" *ngIf="respuesta6">
+          cambiar - o +
+        </button>
+        <span *ngIf="cambiarNegativo6" class="text-center">{{
+          respuesta6
+        }}</span>
+        <span *ngIf="cambiarNegativo6" class="text-center">{{
+          respuesta62
+        }}</span>
+        <span *ngIf="cambiarNegativo6" class="text-center">{{
+          respuesta63
+        }}</span>
+        <span *ngIf="cambiarPositivo6" class="text-center">{{
+          respuesta64
+        }}</span>
       </div>
     </div>
   </div>
-
-
 </div>
