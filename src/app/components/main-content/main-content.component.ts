@@ -54,6 +54,8 @@ export class MainContentComponent implements OnInit {
     'oro 05',
     'oro 06',
     'oro 07',
+    'oro 08',
+    'oro 09',
     'oro 10',
     'oro 11',
     'oro 12',
@@ -64,6 +66,8 @@ export class MainContentComponent implements OnInit {
     'copa 05',
     'copa 06',
     'copa 07',
+    'copa 08',
+    'copa 09',
     'copa 10',
     'copa 11',
     'copa 12',
@@ -74,6 +78,8 @@ export class MainContentComponent implements OnInit {
     'bastos 05',
     'bastos 06',
     'bastos 07',
+    'bastos 08',
+    'bastos 09',
     'bastos 10',
     'bastos 11',
     'bastos 12',
@@ -84,6 +90,8 @@ export class MainContentComponent implements OnInit {
     'espada 05',
     'espada 06',
     'espada 07',
+    'espada 08',
+    'espada 09',
     'espada 10',
     'espada 11',
     'espada 12',
@@ -96,21 +104,21 @@ export class MainContentComponent implements OnInit {
   terminoBusqueda6: string = '';
 
   cambiarNegativo: boolean = true;
-  cambiarPositivo: boolean = false
+  cambiarPositivo: boolean = false;
   cambiarNegativo2: boolean = true;
-  cambiarPositivo2: boolean = false
+  cambiarPositivo2: boolean = false;
   cambiarNegativo3: boolean = true;
-  cambiarPositivo3: boolean = false
+  cambiarPositivo3: boolean = false;
   cambiarNegativo4: boolean = true;
-  cambiarPositivo4: boolean = false
+  cambiarPositivo4: boolean = false;
   cambiarNegativo5: boolean = true;
-  cambiarPositivo5: boolean = false
+  cambiarPositivo5: boolean = false;
   cambiarNegativo6: boolean = true;
-  cambiarPositivo6: boolean = false
+  cambiarPositivo6: boolean = false;
 
   toggleResponses() {
-    this.cambiarNegativo = !this.cambiarNegativo
-    this.cambiarPositivo = !this.cambiarPositivo
+    this.cambiarNegativo = !this.cambiarNegativo;
+    this.cambiarPositivo = !this.cambiarPositivo;
   }
   toggleResponses2() {
     this.cambiarNegativo2 = !this.cambiarNegativo2;
@@ -132,7 +140,6 @@ export class MainContentComponent implements OnInit {
     this.cambiarNegativo6 = !this.cambiarNegativo6;
     this.cambiarPositivo6 = !this.cambiarPositivo6;
   }
-
 
   asDEOro: string =
     'AS DE OROS, CARTA POSITIVA: En poco tiempo gozarás de un periodo de mucha felicidad, durante el cual llegará la abundancia, ya sea derivada del trabajo o por una ayuda inesperada.';
@@ -190,6 +197,22 @@ export class MainContentComponent implements OnInit {
     'SIGNIFICADO DINERO: Viene una ayuda inesperada para ti en el ámbito económico, que traerá tranquilidad a tu vida.';
   oro7INVERTIDA: string =
     'CARTA INVERTIDA Esta carta puede traer frustración ante una situación inesperada, así que invita a tomar las cosas lo mejor que se pueda de una situación negativa, que la evalúe y saque una enseñanza positiva. Eso se llama madurez y es lo que le está pidiendo esta carta al consultante, que madure. La carta al revés se vuelve negativa si el consultante no actúa con pericia, porque no es capaz de adaptarse a los cambios que la vida trae y le teme a lo desconocido.';
+  oro8: string =
+    'ORO 8 CARTA POSITIVA: Es momento que subas tus expectativas y busques nuevos horizontes. No dudes, porque la fortuna te sonríe y lo mejor está por venir en poco tiempo. El equilibrio será muy importante en este momento de tu vida, ya que la fortuna se hará presente y tú debes canalizar esta buena racha para crear algo más grande como un negocio, o invertir en un viaje donde puedes encontrar una oportunidad inesperada.';
+  oro8AMOR: string =
+    'SIGNIFICADO AMOR: Es el momento de encontrar al amor de tu vida, o bien, renovar la energía con tu pareja y tener una segunda luna de miel.';
+  oro8DINERO: string =
+    'SIGNIFICADO DINERO: Llega el dinero para que puedas comprar un inmueble que por muchos años ansiaste, hoy lo puedes lograr.';
+  oro8INVERTIDA: string =
+    ' CARTA INVERTIDA: Cuando aparece esta carta al revés, nos habla de que el consultante se aferra a conservar la posición social que actualmente tiene y le da miedo perderla; pero la vida lo está orillando a cambiar hacia una nueva actividad. Tal vez empezar de cero y olvidarse de la vida anterior, perdiendo todo y comenzando de nuevo. Un gran reto que si lo toma el consultante, le servirá para pronto ver buenas ganancias y sentirse más libre y feliz.';
+  oro9: string =
+    'ORO 9 CARTA POSITIVA: Representa recompensas luego de un duro trabajo, esfuerzo y una gran planificación. Si el consultante está atravesando dificultades, las mismas llegarán a su fin, para dar lugar a un período de equilibrio. Ten paciencia a la hora de planificar un proyecto. Recibirás recompensas en abundancia por tu trabajo. Las cualidades de esta baraja se vinculan ante todo con la sabiduría interior.';
+  oro9AMOR: string =
+    'SIGNIFICADO AMOR: Si te encuentras en una relación feliz, el amor se elevará aún más. Si la relación no es satisfactoria y tienes dudas acerca de terminarla, te alienta a tomar esta decisión. Los resultados traerán mucha plenitud a tu vida. Si el consultante se encuentra soltero, el amor llegará pronto de la mano de una persona que le hará sentir en plenitud.';
+  oro9DINERO: string =
+    'SIGNIFICADO DINERO: gran abundancia y plenitud financiera producto de tu esfuerzo. Estás en posición de ayudar a los demás, hazlo sin dudar. El 9 de oros te recuerda que la riqueza no es sólo dinero, no descuides tu familia ni tu vida social.';
+  oro9INVERTIDA: string =
+    'CARTA INVERTIDA: Cuando aparece mal aspectada, indica que el consultante puede estar atravesando algunas inestabilidades principalmente en lo económico.  Pueden ser dificultades productos de decisiones o actitudes incorrectas. También es un llamado de atención: ¿se ha dado demasiada prioridad a la actividad o trabajo en detrimento de la vida personal?. Esta carta señala que a veces las excesivas horas de trabajo dificultan el vínculo con las demás personas y esto podría generar conflictos. Esta baraja es una invitación en este caso a volver a conectar con el lugar de paz y a replantearse hacia dónde se conducen los deseos de logros. ¿Se está sobrevalorando el dinero? Es decir, es importante gozar de una estabilidad y tranquilidad económicas, pero nunca a costa de la salud, o de dejar de lado la familia y amistades a causa de ello. El 9 de oros aconseja revisar estas cuestiones y ordenar las prioridades. De acuerdo a las cartas que rodeen a esta baraja, también podría estar preguntando si el consultante considera que merece un buen pasar económico. Quizás lo esté deseando, pero posee baja autoestima y se boicotea a sí mismo inconscientemente, por no creerse merecedor de tales cosas.';
   oro10: string =
     'ORO 10 CARTA POSITIVA: @símbolo de comienzos, intelectuales; se asocian a la introspección y la consciencia como base de tu personalidad@.  anuncia buenas noticias, posiblemente en los estudios y en el trabajo Planifica atentamente tus proyectos y sostén el entusiasmo que tienes por tus sueños. Amplía tus horizontes en cuanto al estudio, invierte tu tiempo en capacitarte más, aún si no se trata de algo material o estudios formales.';
   oro10AMOR: string =
@@ -270,6 +293,22 @@ export class MainContentComponent implements OnInit {
     'SIGNIFICADO DINERO El dinero llegará por una promoción en tu trabajo, que tal vez no es una sorpresa porque has venido desarrollando bien tu trabajo.';
   copa7INVERTIDA: string =
     'CARTA INVERTIDA Cuando aparece esta baraja al revés debes tener cuidado con tus pensamientos y deseos, porque el consultante no está siendo coherente entre lo que siente y lo que pide, ya que a veces tendemos a que los pensamientos negativos se hagan realidad y lo positivo nunca llegue. Por ello te pide esta carta que debes revisar tu escala de valores en cuanto al merecimiento.';
+  copa8: string =
+    'COPA 8 CARTA POSITIVA:Es una carta de transición y regeneración. Debemos observar si es tiempo de soltar relaciones o situaciones para que no nos desborden y comenzar una nueva y mejor etapa. Se avecinan nuevos comienzos, especialmente en el ámbito afectivo. Advierte sobre ser obstinados e insistir en los errores, y la necesidad de ser flexibles.Evita las actitudes demasiado frívolas. Confía en ti y suelta lo que ya no te sirve, para superarte, conocerte más y crecer. Recuerda equilibrar la importancia que das a tus emociones con los ámbitos prácticos de la vida, como el trabajo. Debes esforzarte en averiguar qué es tuyo, definir tus raíces emocionales.';
+  copa8AMOR: string =
+    'SIGNIFICADO AMOR: Indica que estás en posición de decidir, en realidad ya lo sabes. Si sientes que es el momento de terminar con esa relación, sin importar cuánto tiempo lleven juntos, hazlo. Toma tu tiempo luego para estar contigo antes de entrar en otra relación. Si eres soltero, aparecerá la persona indicada, debes tener paciencia.';
+  copa8DINERO: string =
+    'SIGNIFICADO DINERO: Atrévete a buscar nuevas formas de generar ingresos y abandonar las que no han dado el resultado que deseabas. No te centres sólo en la seguridad, atrévete a salir de tu zona de confort, ganarás no sólo en lo económico, en lo personal también.';
+  copa8INVERTIDA: string =
+    'CARTA INVERTIDA: pide atender más nuestras necesidades emocionales para que las copas no se desborden. Son señal de que sufriremos una decepción tras la elección de alejarnos de todo, también a causa de una relación amorosa fallida. En este caso, siempre guarda la esperanza de que luego vendrá una mejor pareja. Nos advierte acerca de cuidar nuestra salud, especialmente el sistema inmunológico. También significa que por más que estamos aferrados a algo donde no hay solución posible, por miedo al cambio o por negación, aún sabiendo que allí no hay nada más para nosotros.Otro aspecto de esta carta sería no estar poniendo suficiente esperanza o esfuerzo, dejándonos estar a la deriva y huyendo de los problemas en vez de resolverlos.Si nos describe a una persona, se trata de alguien intolerante, inflexivo e intransigente.';
+  copa9: string =
+    'COPA 9 CARTA POSITIVA: es una carta muy positiva que se enfoca en la plenitud, el éxito y cosechar lo que sembramos después de haber trabajado por nuestros sueños, de una forma organizada. A pesar que siempre trae buenos augurios, este naipe indica también que a pesar de todos los logros, el consultante se encuentra en soledad, disfrutando de este éxito para sí mismo. El mensaje principal del 9 de Copas es de éxito y abundancia, de realización personal para el consultante y conseguir las cosas materiales que siempre hemos querido. Te invita a disfrutar de todo este gozo y éxito con mucho gusto y sin preocupaciones, pues todo lo haz logrado gracias a tu gran esfuerzo.';
+  copa9AMOR: string =
+    'SIGNIFICADO AMOR: En temas del amor, el 9 de Copas describe a una persona que se siente satisfecha consigo misma, no busca una relación, pues así en soledad se siente completamente pleno. Esto es algo muy positivo, pero se aconseja no cerrarse a la posibilidad de encontrar el amor, pues estos momentos llegan de repente y hay que aprovecharlos. Si estás en pareja, anuncia una relación muy duradera a futuro.';
+  copa9DINERO: string =
+    'SIGNIFICADO DINERO El 9 de Copas es un naipe que augura una vida económicamente estable. Próximamente vas a cosechar los frutos de todo tu arduo trabajo y estarán en donde siempre habías querido estar en cuestiones de dinero. La abundancia está en tu camino, así que no dejes de trabajar por todo lo que quieres.';
+  copa9INVERTIDA: string =
+    'CARTA INVERTIDAprincipalmente cuando sale invertido, habla de las decepciones por las que el consultante pudiera pasar. Esta carta nos advierte que la soledad será tu peor enemiga, que nuestra vida necesita orden; nos hace falta amor propio y especialmente el cariño de los demás. En la tirada nos revela el estado emocional del consultante, quien se encuentra pasando por una gran pena o tristeza, la cual eventualmente superará. Es bueno hacer esta observación y animar a la persona a despertar de este estado y poner manos a la obra en los sueños o proyectos, que por su estado de ánimo ha dejado pasar. Si esta carta sale, es necesario profundizar en nuestras emociones y descubrir de dónde pudieran venir las falsas ilusiones o por qué nos aferramos a algo que muy seguramente no se hará realidad, que lo único que traerá a nuestra vida son decepciones. A pesar de esto siempre hay esperanza, ya que aunque salga invertida, es una buena señal para que el consultante revise su realidad y pueda salir adelante de esta situación que lo aqueja.';
   copa10: string =
     'COPA 10 CARTA POSITIVA: Indica la llegada de buenas noticias, la llegada de una persona imaginativa y estudiosa con mucho encanto Es momento de grandes oportunidades con el nacimiento de nuevas metas y proyectos, así como la reflexión de las decisiones que se han tomado hasta el momento. ';
   copa10AMOR: string =
@@ -350,6 +389,22 @@ export class MainContentComponent implements OnInit {
     'SIGNIFICADO DINERO Puede llegar una mejora económica, solo que no fantasees con un porvenir por el que no has trabajado. Si solo has soñado, así no se consigue la abundancia. No hay prosperidad si no hay acción.';
   espada7INVERTIDA: string =
     'Es una carta negativa, porque habla que el consultante tiende a escaparse y rehuir de sus responsabilidades, no le gusta enfrentarse a la realidad así que a veces vive en un mundo de fantasía, especialmente cuando de dinero se trata. Solo espera que algo maravilloso pase para poder mejorar su economía, sin buscar soluciones reales.';
+  espada8: string =
+    'ESPADA 8 CARTA NEGATIVA: Es importante que seas muy maduro para poder entender lo que viene a tu vida, ya que es un momento de desesperación que traerá dolor. Debes ser una persona madura para poder reconocer tus errores, perdonarte y seguir adelante. Reflexiona y cúlpate por lo que tú hiciste, no por lo que la gente piensa de ti.';
+  espada8AMOR: string =
+    'SIGNIFICADO AMOR: En una pareja que lleva varios años juntos, surgirá un periodo de grandes disputas, sobre todo porque la sexualidad no es satisfactoria y será motivo de grandes reclamos.';
+  espada8DINERO: string =
+    'SIGNIFICADO DINERO Estarás con la idea de los juegos de azar para ganar dinero de manera fácil. Pero toma en cuenta que así como puedes ganar grandes sumas de dinero, también puedes perderlas. Pon en la balanza qué ganas y qué pierdes.';
+  espada8INVERTIDA: string =
+    'CARTA INVERTIDA: La carta como tal no cuenta con un reverso, pero sí con un lado negativo que debes de conocer, el cual te advierte de no caer en excesos que tengan que ver con sexo y drogas. O bien, que te veas involucrado en situaciones que tengan relación con juegos de azar y te impliquen un riego a tu integridad física.';
+  espada9: string =
+    'ESPADA 9 CARTA NEGATIVA: En la vida podemos atravesar situaciones dolorosas, pero muchas veces es ese mismo dolor el que nos abre el camino a un mejor futuro. Asume las responsabilidades cuanto antes. Revisa tus pensamientos, quizás estés pensando de más algunas cosas y generándote a ti mismo toda esa angustia. Reconocer y aceptar la responsabilidad de ésto es el primer paso para solucionar todos los conflictos presentes.';
+  espada9AMOR: string =
+    'SIGNIFICADO AMOR: En este ámbito es muy difícil ser objetivos, sin embargo podemos recomendar al consultante, si está en pareja, que escuche sus intuiciones. Podría estar intuyendo por ejemplo algunos engaños, no necesariamente vinculados a infidelidades. Anuncia una etapa de inestabilidad y confusión. Si el consultante se encuentra soltero, es recomendable que no confíe ciegamente, en especial cuando acaba de conocer a alguien.';
+  espada9DINERO: string =
+    'SIGNIFICADO DINERO: Este aspecto no está exento de la angustia. Por sí solo el nueve de espadas no anuncia si hay o no resolución, sin embargo recomienda la calma y la organización como manera de superar esta etapa. Al tratarse de una baraja de espadas, debes buscar soluciones racionales y lógicas.';
+  espada9INVERTIDA: string =
+    'CARTA INVERTIDA augura momentos de mucha angustia y miedos. Como ya vimos, éstos surgen de los pensamientos negativos del consultante. Éste se encuentra además dudando de sus capacidades y acciones, lo que deriva en situaciones de autoboicot, aislamiento y paranoia; no necesariamente estos sentimientos se corresponden con la realidad ni posean un fundamento claro. El consultante debe apoyarse en quienes se preocupan por él, ya que podría caer en afecciones como la depresión y el insomnio. Debido a las emociones que se atraviesan cuando sale esta carta, es normal que se busque el aislamiento. Puede resultar muy positivo, siempre y cuando sea algo temporal y se esté enfocado en hacer un trabajo personal interno para alcanzar la paz. También es recomendable buscar acompañamiento terapéutico, ya que no se tendrá la mente muy clara y aquello que puede comenzar como una gran idea, puede terminar dando malos y poco confiables resultados. Por este mismo motivo se recomienda también aplazar los compromisos tomados, especialmente a la hora de tomar decisiones, ya que sin un pensamiento equilibrado se arriesga a caer en conflictos.';
   espada10: string =
     'ESPADA 10 CARTA POSITIVA: Terquedad y obstinación, gran capacidad de análisis. Naturaleza energética. Será necesario tomar decisiones con gran velocidad. Confía en ti. Prepárate para recibir noticias tanto positivas como negativas. Siempre debes confiar en tu inteligencia y habilidad para adaptarte, así podrás beneficiarte de estos cambios o, cuando menos, no quedar muy mal parado.   ';
   espada10AMOR: string =
@@ -430,6 +485,19 @@ export class MainContentComponent implements OnInit {
     'SIGNIFICADO DINERO Un aumento salarial está en puerta y traerá un buen beneficio económico. Para ubicar el lado negativo del 7 de Bastos, es importante que tomes en cuenta la siguiente información: “Cuando aparezca en tu tirada y deseas saber si está al revés, deberás ubicar que el primer palo de arriba a la izquierda sea de color naranja o rojo, según sea el diseño de la carta';
   bastos7INVERTIDA: string =
     'CARTA INVERTIDA El lado negativo de la lectura te advierte que mientras tú brillas en el trabajo, existe una persona envidiosa que desea tu puesto, pero no se da cuenta de que tu éxito lo has logrado gracias a tu esfuerzo, así que se dedicará a hablar a tus espaldas para hacerte quedar mal. Otro rasgo negativo cuando aparece esta carta en una tirada es la inseguridad y autoestima del consultante, ya que en el trabajo se puede sentir poca cosa o incapaz, lo cual atrae dudas y lo puede hacer caer en errores. Cuando se pregunta por la pareja está advirtiendo que hay celos absurdos, que pueden acabar con la paciencia de la pareja hasta llegar a la ruptura.';
+  bastos8: string =
+    'BASTOS 8 CARTA POSITIVA: Para sin son importantes tanto el trabajo como tu familia o pareja, así que es el momento de hacer un equilibrio entre estos dos rubros, porque en uno estás fallando. Es momento que reflexiones qué estás haciendo con tu trabajo y qué tiempo dejas para tu familia o pareja, ya que estás descuidando tu hogar, por un trabajo que no te hace feliz.';
+  bastos8AMOR: string =
+    'SIGNIFICADO AMOR Ten cuidado de caer o haber caído en una dependencia con tu pareja. Amar es sentirse libre, no agobiado o prisionero.';
+  bastos8DINERO: string =
+    'SIGNIFICADO DINERO El trabajo es tu fuente de ingresos, por lo que si tienes problemas económicos es momento de revisar si no debes cambiar de empleo.';
+  bastos8INVERTIDA: string =
+    'CARTA INVERTIDA: El 8 de Bastos en sí es negativa, a pesar de que esta carta no tiene revés, lo negativo en ella está en que puede mostrarnos nuestro lado negativo y que a veces no queremos ver. Analiza los siguiente y checa qué debes cambiar en ti: Dependencia emocional a personas, objetos o situaciones. Tal vez es momento de revisar el trabajo actual, para ver si no se ha caído en una zona de confort creando una mediocridad, sin ambiciones o bien, estamos a gusto, felices o estables en el trabajo donde estamos cómodos, pero te sigue entusiasmando y lo disfrutas.Revisa si no estás basando tu felicidad en objetos que compras cada vez que sientes un vacío o estás triste, ya que puedes tener una dependencia emocional a lo material. Otro rasgo a revisar es la dependencia a los medicamentos, al alcohol o las drogas, si es así debes descubrir en qué momento surge esta dependencia o el por qué se creó. Una vez que te haces consciente podrás trabajar en ti mismo y seguir adelante.';
+  bastos9: string =
+    'BASTOS 9 CARTA NEGATIVA: Indica el desenlace de algunos problemas que se han presentando. Es también la señal de que debemos tomar valor para enfrentar los obstáculos que se acercan en un futuro cercano. Esta carta denota fuerza, valor y resistencia, necesitas tomar decisiones importantes y estás en tu mejor momento.';
+  bastos9AMOR: string = 'SIGNIFICADO AMOR Se aproximan dudas por parte de la pareja a la hora de tomar decisiones importantes, así como algún tercero en la relación.';
+  bastos9DINERO: string = 'SIGNIFICADO DINERO Advertencia para iniciar con nuevas alternativas para obtener recursos, o bien un cambio de estrategia financiera.';
+  bastos9INVERTIDA: string = 'CARTA INVERTIDA: El 9 de Bastos no es una carta positiva y tampoco negativa, es un aviso que llega para decir que aún continúa la lucha y los obstáculos antes de llegar a la meta, no tiene revés. A continuación los aspectos negativos mas notables. Puede indicar bastantes contratiempos que te absorben energía y te hacen débil, al punto de querer tirar la toalla. Por otro lado, puede indicar también la ausencia de un compromiso real con los objetivos planteados. Mal aspectada con otras cartas puede hablar de futuras enfermedades y malos entendidos, en situaciones familiares y en pareja. Hace referencia al abuso de actitudes a la defensiva en el trabajo,  ocasionando que las personas intenten crear conflictos de la nada. En el terreno sentimental, esta carta nos recuerda que ser arrogante y querer imponer ideas, o siempre querer tener la razón, es totalmente nocivo y desgasta las relaciones sentimentales. En el plano de las finanzas, indica momentos difíciles que se avecinan, o épocas que requieren gran meticulosidad y buena administración para salir bien librado. En cuanto a la salud, esta carta pudiera advertirnos de problemas musculares, posibles lesiones en las piernas y en las caderas, así como bloqueos mentales que incapacitan los pensamientos claros; incluso podría haber neurosis y alteraciones generales del sistema nervioso.';
   bastos10: string =
     'BASTOS 10 CARTA POSITIVA: Bien aspectada anuncia comienzos y novedades, quizás un mensajero extranjero. Si la consulta es sobre la relación con alguien, señala que ese alguien es sincero con nosotros. Mal aspectada indica inestabilidad y disgustos. Recibirás el mensaje de un amigo o pariente, serán noticias alentadoras y felices. Si estás proyectando un viaje o un cambio, no lo dudes, anuncia un éxito rotundo. ';
   bastos10AMOR: string =
@@ -518,6 +586,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta13 = this.oro7DINERO;
         this.respuesta14 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta1 = this.oro8;
+        this.respuesta12 = this.oro8AMOR;
+        this.respuesta13 = this.oro8DINERO;
+        this.respuesta14 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta1 = this.oro9;
+        this.respuesta12 = this.oro9AMOR;
+        this.respuesta13 = this.oro9DINERO;
+        this.respuesta14 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta1 = this.oro10;
         this.respuesta12 = this.oro10AMOR;
@@ -577,6 +657,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta12 = this.copa7AMOR;
         this.respuesta13 = this.copa7DINERO;
         this.respuesta14 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta1 = this.copa8;
+        this.respuesta12 = this.copa8AMOR;
+        this.respuesta13 = this.copa8DINERO;
+        this.respuesta14 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta1 = this.copa9;
+        this.respuesta12 = this.copa9AMOR;
+        this.respuesta13 = this.copa9DINERO;
+        this.respuesta14 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta1 = this.copa10;
@@ -638,6 +730,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta13 = this.espada7DINERO;
         this.respuesta14 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta1 = this.espada8;
+        this.respuesta12 = this.espada8AMOR;
+        this.respuesta13 = this.espada8DINERO;
+        this.respuesta14 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta1 = this.espada9;
+        this.respuesta12 = this.espada9AMOR;
+        this.respuesta13 = this.espada9DINERO;
+        this.respuesta14 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta1 = this.espada10;
         this.respuesta12 = this.espada10AMOR;
@@ -697,6 +801,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta12 = this.bastos7AMOR;
         this.respuesta13 = this.bastos7DINERO;
         this.respuesta14 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta1 = this.bastos8;
+        this.respuesta12 = this.bastos8AMOR;
+        this.respuesta13 = this.bastos8DINERO;
+        this.respuesta14 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta1 = this.bastos9;
+        this.respuesta12 = this.bastos9AMOR;
+        this.respuesta13 = this.bastos9DINERO;
+        this.respuesta14 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta1 = this.bastos10;
@@ -762,6 +878,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta23 = this.oro7DINERO;
         this.respuesta24 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta2 = this.oro8;
+        this.respuesta22 = this.oro8AMOR;
+        this.respuesta23 = this.oro8DINERO;
+        this.respuesta24 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta2 = this.oro9;
+        this.respuesta22 = this.oro9AMOR;
+        this.respuesta23 = this.oro9DINERO;
+        this.respuesta24 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta2 = this.oro10;
         this.respuesta22 = this.oro10AMOR;
@@ -821,6 +949,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta22 = this.copa7AMOR;
         this.respuesta23 = this.copa7DINERO;
         this.respuesta24 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta2 = this.copa8;
+        this.respuesta22 = this.copa8AMOR;
+        this.respuesta23 = this.copa8DINERO;
+        this.respuesta24 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta2 = this.copa9;
+        this.respuesta22 = this.copa9AMOR;
+        this.respuesta23 = this.copa9DINERO;
+        this.respuesta24 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta2 = this.copa10;
@@ -882,6 +1022,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta23 = this.espada7DINERO;
         this.respuesta24 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta2 = this.espada8;
+        this.respuesta22 = this.espada8AMOR;
+        this.respuesta23 = this.espada8DINERO;
+        this.respuesta24 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta2 = this.espada9;
+        this.respuesta22 = this.espada9AMOR;
+        this.respuesta23 = this.espada9DINERO;
+        this.respuesta24 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta2 = this.espada10;
         this.respuesta22 = this.espada10AMOR;
@@ -941,6 +1093,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta22 = this.bastos7AMOR;
         this.respuesta23 = this.bastos7DINERO;
         this.respuesta24 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta2 = this.bastos8;
+        this.respuesta22 = this.bastos8AMOR;
+        this.respuesta23 = this.bastos8DINERO;
+        this.respuesta24 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta2 = this.bastos9;
+        this.respuesta22 = this.bastos9AMOR;
+        this.respuesta23 = this.bastos9DINERO;
+        this.respuesta24 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta2 = this.bastos10;
@@ -1007,6 +1171,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta33 = this.oro7DINERO;
         this.respuesta34 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta3 = this.oro8;
+        this.respuesta32 = this.oro8AMOR;
+        this.respuesta33 = this.oro8DINERO;
+        this.respuesta34 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta3 = this.oro9;
+        this.respuesta32 = this.oro9AMOR;
+        this.respuesta33 = this.oro9DINERO;
+        this.respuesta34 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta3 = this.oro10;
         this.respuesta32 = this.oro10AMOR;
@@ -1066,6 +1242,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta32 = this.copa7AMOR;
         this.respuesta33 = this.copa7DINERO;
         this.respuesta34 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta3 = this.copa8;
+        this.respuesta32 = this.copa8AMOR;
+        this.respuesta33 = this.copa8DINERO;
+        this.respuesta34 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta3 = this.copa9;
+        this.respuesta32 = this.copa9AMOR;
+        this.respuesta33 = this.copa9DINERO;
+        this.respuesta34 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta3 = this.copa10;
@@ -1127,6 +1315,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta33 = this.espada7DINERO;
         this.respuesta34 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta3 = this.espada8;
+        this.respuesta32 = this.espada8AMOR;
+        this.respuesta33 = this.espada8DINERO;
+        this.respuesta34 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta3 = this.espada9;
+        this.respuesta32 = this.espada9AMOR;
+        this.respuesta33 = this.espada9DINERO;
+        this.respuesta34 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta3 = this.espada10;
         this.respuesta32 = this.espada10AMOR;
@@ -1186,6 +1386,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta32 = this.bastos7AMOR;
         this.respuesta33 = this.bastos7DINERO;
         this.respuesta34 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta3 = this.bastos8;
+        this.respuesta32 = this.bastos8AMOR;
+        this.respuesta33 = this.bastos8DINERO;
+        this.respuesta34 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta3 = this.bastos9;
+        this.respuesta32 = this.bastos9AMOR;
+        this.respuesta33 = this.bastos9DINERO;
+        this.respuesta34 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta3 = this.bastos10;
@@ -1251,6 +1463,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta43 = this.oro7DINERO;
         this.respuesta44 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta4 = this.oro8;
+        this.respuesta42 = this.oro8AMOR;
+        this.respuesta43 = this.oro8DINERO;
+        this.respuesta44 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta4 = this.oro9;
+        this.respuesta42 = this.oro9AMOR;
+        this.respuesta43 = this.oro9DINERO;
+        this.respuesta44 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta4 = this.oro10;
         this.respuesta42 = this.oro10AMOR;
@@ -1310,6 +1534,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta42 = this.copa7AMOR;
         this.respuesta43 = this.copa7DINERO;
         this.respuesta44 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta4 = this.copa8;
+        this.respuesta42 = this.copa8AMOR;
+        this.respuesta43 = this.copa8DINERO;
+        this.respuesta44 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta4 = this.copa9;
+        this.respuesta42 = this.copa9AMOR;
+        this.respuesta43 = this.copa9DINERO;
+        this.respuesta44 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta4 = this.copa10;
@@ -1371,6 +1607,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta43 = this.espada7DINERO;
         this.respuesta44 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta4 = this.espada8;
+        this.respuesta42 = this.espada8AMOR;
+        this.respuesta43 = this.espada8DINERO;
+        this.respuesta44 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta4 = this.espada9;
+        this.respuesta42 = this.espada9AMOR;
+        this.respuesta43 = this.espada9DINERO;
+        this.respuesta44 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta4 = this.espada10;
         this.respuesta42 = this.espada10AMOR;
@@ -1430,6 +1678,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta42 = this.bastos7AMOR;
         this.respuesta43 = this.bastos7DINERO;
         this.respuesta44 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta4 = this.bastos8;
+        this.respuesta42 = this.bastos8AMOR;
+        this.respuesta43 = this.bastos8DINERO;
+        this.respuesta44 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta4 = this.bastos9;
+        this.respuesta42 = this.bastos9AMOR;
+        this.respuesta43 = this.bastos9DINERO;
+        this.respuesta44 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta4 = this.bastos10;
@@ -1495,6 +1755,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta53 = this.oro7DINERO;
         this.respuesta54 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta5 = this.oro8;
+        this.respuesta52 = this.oro8AMOR;
+        this.respuesta53 = this.oro8DINERO;
+        this.respuesta54 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta5 = this.oro9;
+        this.respuesta52 = this.oro9AMOR;
+        this.respuesta53 = this.oro9DINERO;
+        this.respuesta54 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta5 = this.oro10;
         this.respuesta52 = this.oro10AMOR;
@@ -1554,6 +1826,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta52 = this.copa7AMOR;
         this.respuesta53 = this.copa7DINERO;
         this.respuesta54 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta5 = this.copa8;
+        this.respuesta52 = this.copa8AMOR;
+        this.respuesta53 = this.copa8DINERO;
+        this.respuesta54 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta5 = this.copa9;
+        this.respuesta52 = this.copa9AMOR;
+        this.respuesta53 = this.copa9DINERO;
+        this.respuesta54 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta5 = this.copa10;
@@ -1615,6 +1899,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta53 = this.espada7DINERO;
         this.respuesta54 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta5 = this.espada8;
+        this.respuesta52 = this.espada8AMOR;
+        this.respuesta53 = this.espada8DINERO;
+        this.respuesta54 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta5 = this.espada9;
+        this.respuesta52 = this.espada9AMOR;
+        this.respuesta53 = this.espada9DINERO;
+        this.respuesta54 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta5 = this.espada10;
         this.respuesta52 = this.espada10AMOR;
@@ -1674,6 +1970,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta52 = this.bastos7AMOR;
         this.respuesta53 = this.bastos7DINERO;
         this.respuesta54 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta5 = this.bastos8;
+        this.respuesta52 = this.bastos8AMOR;
+        this.respuesta53 = this.bastos8DINERO;
+        this.respuesta54 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta5 = this.bastos9;
+        this.respuesta52 = this.bastos9AMOR;
+        this.respuesta53 = this.bastos9DINERO;
+        this.respuesta54 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta5 = this.bastos10;
@@ -1739,6 +2047,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta63 = this.oro7DINERO;
         this.respuesta64 = this.oro7INVERTIDA;
         break;
+      case 'oro 08':
+        this.respuesta6 = this.oro8;
+        this.respuesta62 = this.oro8AMOR;
+        this.respuesta63 = this.oro8DINERO;
+        this.respuesta64 = this.oro8INVERTIDA;
+        break;
+      case 'oro 09':
+        this.respuesta6 = this.oro9;
+        this.respuesta62 = this.oro9AMOR;
+        this.respuesta63 = this.oro9DINERO;
+        this.respuesta64 = this.oro9INVERTIDA;
+        break;
       case 'oro 10':
         this.respuesta6 = this.oro10;
         this.respuesta62 = this.oro10AMOR;
@@ -1798,6 +2118,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta62 = this.copa7AMOR;
         this.respuesta63 = this.copa7DINERO;
         this.respuesta64 = this.copa7INVERTIDA;
+        break;
+      case 'copa 08':
+        this.respuesta6 = this.copa8;
+        this.respuesta62 = this.copa8AMOR;
+        this.respuesta63 = this.copa8DINERO;
+        this.respuesta64 = this.copa8INVERTIDA;
+        break;
+      case 'copa 09':
+        this.respuesta6 = this.copa9;
+        this.respuesta62 = this.copa9AMOR;
+        this.respuesta63 = this.copa9DINERO;
+        this.respuesta64 = this.copa9INVERTIDA;
         break;
       case 'copa 10':
         this.respuesta6 = this.copa10;
@@ -1859,6 +2191,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta63 = this.espada7DINERO;
         this.respuesta64 = this.espada7INVERTIDA;
         break;
+      case 'espada 08':
+        this.respuesta6 = this.espada8;
+        this.respuesta62 = this.espada8AMOR;
+        this.respuesta63 = this.espada8DINERO;
+        this.respuesta64 = this.espada8INVERTIDA;
+        break;
+      case 'espada 09':
+        this.respuesta6 = this.espada9;
+        this.respuesta62 = this.espada9AMOR;
+        this.respuesta63 = this.espada9DINERO;
+        this.respuesta64 = this.espada9INVERTIDA;
+        break;
       case 'espada 10':
         this.respuesta6 = this.espada10;
         this.respuesta62 = this.espada10AMOR;
@@ -1918,6 +2262,18 @@ export class MainContentComponent implements OnInit {
         this.respuesta62 = this.bastos7AMOR;
         this.respuesta63 = this.bastos7DINERO;
         this.respuesta64 = this.bastos7INVERTIDA;
+        break;
+      case 'bastos 08':
+        this.respuesta6 = this.bastos8;
+        this.respuesta62 = this.bastos8AMOR;
+        this.respuesta63 = this.bastos8DINERO;
+        this.respuesta64 = this.bastos8INVERTIDA;
+        break;
+      case 'bastos 09':
+        this.respuesta6 = this.bastos9;
+        this.respuesta62 = this.bastos9AMOR;
+        this.respuesta63 = this.bastos9DINERO;
+        this.respuesta64 = this.bastos9INVERTIDA;
         break;
       case 'bastos 10':
         this.respuesta6 = this.bastos10;

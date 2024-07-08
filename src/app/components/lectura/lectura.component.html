@@ -1,0 +1,43 @@
+<div>
+  <h1>Elige tu pregunta</h1>
+  <div class="botones">
+    <button class="suerte" (click)="suerte()">Suerte</button>
+    <button class="amor" (click)="amor()">Amor</button>
+    <button class="dinero" (click)="dinero()">Dinero</button>
+  </div>
+</div>
+
+<div *ngIf="loading" style="margin-top: 12px">
+  <div class="spinner-border text-secondary" role="status"></div>
+  <h3>Analizando {{ elegido }}</h3>
+</div>
+
+<div *ngIf="!loading">
+  <div *ngIf="mostrar" class="cont">
+    <img
+      width="200"
+      [src]="informacion.image1"
+      [class.invertida]="informacion.invertida1"
+      alt=""
+    />
+    <p>{{ informacion.info1 }}</p>
+  </div>
+  <div *ngIf="mostrar" class="cont">
+    <img
+      width="200"
+      [src]="informacion.image2"
+      [class.invertida]="informacion.invertida2"
+      alt=""
+    />
+    <p>{{ informacion.info2 }}</p>
+  </div>
+  <div *ngIf="mostrar" class="cont">
+    <img
+      width="200"
+      [src]="informacion.image3"
+      [class.invertida]="informacion.invertida3"
+      alt=""
+    />
+    <p>{{ informacion.info3 }}</p>
+  </div>
+</div>

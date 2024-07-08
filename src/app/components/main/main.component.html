@@ -1,0 +1,31 @@
+
+<div class="margin">
+  <div class="ajustar">
+    <div class="col-md-4 text-center">
+      <button (click)="mostrarContenido('lectura')" class="btn btn-primary">
+        Lectura virtual
+      </button>
+    </div>
+    <div class="col-md-4 text-center">
+      <button (click)="mostrarContenido('fast')" class="btn btn-primary">
+        Preguntas rápidas
+      </button>
+    </div>
+    <div class="col-md-4 text-center">
+      <button (click)="mostrarContenido('complete')" class="btn btn-primary">
+        Respuestas completas
+      </button>
+    </div>
+  </div>
+
+  <div class="row margin">
+    <div class="col-md-12 text-center">
+      <div [ngSwitch]="contenidoAMostrar">
+        <app-fast-content *ngSwitchCase="'fast'"></app-fast-content>
+        <app-main-content *ngSwitchCase="'complete'"></app-main-content>
+        <app-lectura *ngSwitchCase="'lectura'"></app-lectura>
+        <div *ngSwitchDefault>Seleccione una opción</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'cartomancia';
 
-  contenidoAMostrar: string | null = null;
 
-  mostrarContenido(tipo: string) {
-    this.contenidoAMostrar = tipo;
-  }
 }

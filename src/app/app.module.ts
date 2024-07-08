@@ -7,16 +7,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { FastContentComponent } from './components/fast-content/fast-content.component';
+import { LecturaComponent } from './components/lectura/lectura.component';
+import { LoginComponent } from './components/login/login.component';
+import { MainComponent } from './components/main/main.component';
+import { AuthGuard } from './auth.guard';
+import { AuthServiceService } from './services/auth-service.service';
 
 @NgModule({
-  declarations: [AppComponent, MainContentComponent, FastContentComponent],
+  declarations: [
+    AppComponent,
+    MainContentComponent,
+    FastContentComponent,
+    LecturaComponent,
+    LoginComponent,
+    MainComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [AuthServiceService, AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

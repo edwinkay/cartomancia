@@ -1,0 +1,31 @@
+.cont{
+  margin-top: 19px;
+    border: 1px solid gray;
+    border-radius: 17px;
+    padding: 12px;
+}
+.botones{
+  display: flex;
+    justify-content: space-around;
+}
+.suerte{
+  padding: 9px;
+    color: white;
+    border-radius: 9px;
+    background: green;
+}
+.amor{
+  padding: 9px;
+    color: white;
+    border-radius: 9px;
+    background: red;
+}
+.dinero{
+  padding: 9px;
+    color: black;
+    border-radius: 9px;
+    background: yellow;
+}
+.invertida {
+  transform: rotate(180deg);
+}

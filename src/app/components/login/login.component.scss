@@ -1,0 +1,21 @@
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  margin-bottom: 1em;
+}
+
+.error-message {
+  color: red;
+}

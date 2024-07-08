@@ -12,18 +12,18 @@ export class FastContentComponent implements OnInit {
   terminoBusqueda2: string = '';
 
   elegir = [
-    '¿Me olvida la persona a quien amo?... sota de oros',
-    '¿Conseguire mis deseos?... caballo de oros',
-    '¿Tengo enemigos?...rey de oros',
-    '¿durara mucho mi desgracia?... sota de copas',
-    '¿Morire pronto?... caballo de copas',
-    '¿Cual sera mi suerte?...rey de copas',
-    '¿Que anuncia mis estrella?... sota de espadas',
-    '¿sere rico?... caballo de espadas',
-    '¿es fundada mi desconfianza?...rey de espadas',
-    '¿podre evitar peligros?... sota de bastos',
-    '¿llegare a edad avanzada?... caballo de bastos',
-    '¿obtendre los triunfos que deseo?... rey de bastos',
+    '¿Me olvida la persona a quien amo?',
+    '¿Conseguire mis deseos?',
+    '¿Tengo enemigos?',
+    '¿durara mucho mi desgracia?',
+    '¿Morire pronto?',
+    '¿Cual sera mi suerte?',
+    '¿Que anuncia mis estrella?',
+    '¿sere rico?',
+    '¿es fundada mi desconfianza?',
+    '¿podre evitar peligros?',
+    '¿llegare a edad avanzada?',
+    '¿obtendre los triunfos que deseo?',
   ];
   cartas = [
     'As de oros',
