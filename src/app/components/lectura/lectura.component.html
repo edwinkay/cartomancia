@@ -2,14 +2,14 @@
   <h1>Elige tu pregunta</h1>
   <div class="botones">
     <button class="suerte" (click)="suerte()">Suerte</button>
+    <button class="pred" (click)="pred()">Prediccion</button>
     <button class="amor" (click)="amor()">Amor</button>
     <button class="dinero" (click)="dinero()">Dinero</button>
   </div>
 </div>
-
 <div *ngIf="loading" style="margin-top: 12px">
   <div class="spinner-border text-secondary" role="status"></div>
-  <h3>Analizando {{ elegido }}</h3>
+  <h3>{{ elegido }}</h3>
 </div>
 
 <div *ngIf="!loading">
@@ -22,22 +22,12 @@
     />
     <p>{{ informacion.info1 }}</p>
   </div>
-  <div *ngIf="mostrar" class="cont">
-    <img
-      width="200"
-      [src]="informacion.image2"
-      [class.invertida]="informacion.invertida2"
-      alt=""
-    />
-    <p>{{ informacion.info2 }}</p>
-  </div>
-  <div *ngIf="mostrar" class="cont">
-    <img
-      width="200"
-      [src]="informacion.image3"
-      [class.invertida]="informacion.invertida3"
-      alt=""
-    />
-    <p>{{ informacion.info3 }}</p>
+  <div *ngIf="mostrar2" class="cont">
+    <div>
+      <img width="100" [src]="prediccionAleatoria.imagen1" alt="" />
+      <img width="100" [src]="prediccionAleatoria.imagen2" alt="" />
+      <img  width="100" [src]="prediccionAleatoria.imagen3" alt="" />
+    </div>
+    <p>{{ prediccionAleatoria.conjugacion }}</p>
   </div>
 </div>

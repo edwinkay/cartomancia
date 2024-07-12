@@ -7,11 +7,11 @@ export class RespuestasService {
   respuestas: { [key: string]: string } = {
      asDEOro:
     'AS DE OROS, CARTA POSITIVA: En poco tiempo gozarás de un periodo de mucha felicidad, durante el cual llegará la abundancia, ya sea derivada del trabajo o por una ayuda inesperada.',
-  asDeorosAMOR:
+  asDEOroAMOR:
     'SIGNIFICADO AMOR: Es un periodo de gran felicidad para la pareja a tal grado que haya boda o unión, si la pareja lleva varios años juntos, habrá un renacer del amor.',
-  asDeorosDINERO:
+  asDEOroDINERO:
     'SIGNIFICADO DINERO: La riqueza material puede llegar en forma de regalo, por aumento de sueldo o bien, por un premio en el azar.',
-  asDeorosINVERTIDA:
+  asDEOroINVERTIDA:
     'CARTA INVERTIDA te está previniendo de estafas o abuso de confianza por parte de un hombre joven que es tu amigo, o que está en el círculo de amigos, ya que es un momento donde tienes la guardia baja. Esto porque te sientes contento, feliz y pleno, y no estás alerta, así que ten cuidado. No es momento de comenzar nada nuevo, ni emprender un negocio por muy bueno que se escuche.',
   oro2:
     'ORO 02 CARTA NEGATIVA: Esta carta es un augurio de contratiempos, dificultades, problemas y situaciones que se aplazan. Es importante mantenerse alerta, pues es en los momentos de inestabilidad donde conviene tener paciencia y esperar a que pase la racha, No realices proyectos próximamente, ya que te encuentras en una situación inestable. Además, es recomendable que te mantengas alerta, pues podrían existir celos de una tercera persona en discordia, o competencias y rivalidades, de las cuales es necesario que te cuides.',
