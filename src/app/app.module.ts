@@ -12,6 +12,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
 import { AuthGuard } from './auth.guard';
 import { AuthServiceService } from './services/auth-service.service';
+import { SignosComponent } from './components/signos/signos.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuthServiceService } from './services/auth-service.service';
     LecturaComponent,
     LoginComponent,
     MainComponent,
+    SignosComponent,
   ],
   imports: [
     BrowserModule,

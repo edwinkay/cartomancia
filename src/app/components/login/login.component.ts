@@ -7,18 +7,27 @@ import { AuthServiceService } from 'src/app/services/auth-service.service';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
-  ngOnInit(): void {}
-
   username: string = '';
   password: string = '';
   errorMessage: string = '';
+  loading: boolean = false;
 
   constructor(private authService: AuthServiceService) {}
 
+  ngOnInit(): void {}
+
   login(): void {
-    if (!this.authService.login(this.username, this.password)) {
-      this.errorMessage = 'Usuario o contraseña incorrectos';
-    }
+    this.loading = true;
+    this.errorMessage = '';
+
+    setTimeout(() => {
+      // Simulate an async login process
+      if (this.authService.login(this.username, this.password)) {
+        this.loading = false;
+      } else {
+        this.loading = false;
+        this.errorMessage = 'Usuario o contraseña incorrectos';
+      }
+    }, 2000); // Simulated delay
   }
 }

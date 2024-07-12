@@ -1,0 +1,50 @@
+<div class="compatibilidad-container">
+  <button (click)="modal()">conocer mi signo</button>
+  <div *ngIf="mostrar" class="body">
+    <div class="signos-container">
+  <div class="signo-card" *ngFor="let signo of signox">
+    <a style="    color: blue;
+    position: absolute;
+    right: 22%;" (click)="cerrar()" >Cerrar</a>
+    <div class="signo-header">{{ signo.nombre }}</div>
+    <div class="signo-content">
+      <p><strong>Fechas:</strong> {{ signo.fechas }}</p>
+      <p><strong>Planeta regente:</strong> {{ signo.planeta }}</p>
+      <p><strong>Elemento:</strong> {{ signo.elemento }}</p>
+      <p><strong>Significado:</strong> {{ signo.significado }}</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div style="display: flex;
+    gap: 5rem;">
+    <div class="select-container">
+      <label for="signoIzquierdo">Tu signo es:</label>
+      <select id="signoIzquierdo" [(ngModel)]="signoIzquierdo">
+        <option *ngFor="let signo of signos" [value]="signo">
+          {{ signo }}
+        </option>
+      </select>
+    </div>
+
+    <div class="select-container">
+      <label for="signoDerecho">Otro signo</label>
+      <select id="signoDerecho" [(ngModel)]="signoDerecho">
+        <option *ngFor="let signo of signos" [value]="signo">
+          {{ signo }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <button (click)="verCompatibilidad()">Ver Compatibilidad</button>
+
+  <div *ngIf="compatibilidad">
+    <h3>Compatibilidad</h3>
+    <p>Porcentaje: {{ compatibilidad.porcentaje }}%</p>
+    <p>Planeta Regente: {{ compatibilidad.planeta }}</p>
+    <p>Elemento: {{ compatibilidad.elemento }}</p>
+    <p>Explicación: {{ compatibilidad.explicacion }}</p>
+  </div>
+</div>

@@ -6,3 +6,40 @@
 .margin{
   margin: 15px;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.margin {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ajustar {
+  flex: 1;
+}
+
+.row {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin {
+  flex: 1;
+}
+
