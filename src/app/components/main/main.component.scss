@@ -1,12 +1,20 @@
-.ajustar{
+.ajustar {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
-.margin{
+.margin {
   margin: 15px;
 }
-html, body {
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  align-items: center;
+  padding: 0 15px;
+}
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -16,9 +24,11 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
-.ajustar {
-  flex: 1;
+.signo {
+  color: gray;
+  margin: 0;
+  position: relative;
+  top: -12px;
 }
 
 .row {
@@ -42,4 +52,3 @@ body {
 .margin {
   flex: 1;
 }
-

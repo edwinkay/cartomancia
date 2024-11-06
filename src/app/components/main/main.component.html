@@ -1,3 +1,11 @@
+<div class="head">
+    <div>
+      <h2 style="margin: 0;">Hola {{ usuario?.nombre || "desconocido" }}</h2>
+      <h4 class="signo">{{ signoZodiacal }}</h4>
+    </div>
+
+    <h2 (click)="salir()">Salir</h2>
+  </div>
 <div class="margin">
   <div class="ajustar">
     <div class="col-md-4 text-center">
@@ -16,11 +24,11 @@
       </button>
     </div>
   </div>
-  <div style="margin-top: 8px;" class="col-md-12 text-center">
-      <button (click)="mostrarContenido('signos')" class="btn btn-primary">
-        Signos
-      </button>
-    </div>
+  <div style="margin-top: 8px" class="col-md-12 text-center">
+    <button (click)="mostrarContenido('signos')" class="btn btn-primary">
+      Signos
+    </button>
+  </div>
 
   <div class="row margin">
     <div class="col-md-12 text-center">
@@ -35,4 +43,3 @@
   </div>
 </div>
 <footer>Application translated by Edwin</footer>
-
