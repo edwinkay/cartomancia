@@ -13,6 +13,7 @@ export class OpcionesComponent implements OnInit {
   seleccion = false;
   objeto: any;
   modalChakra = false;
+  fondo:any
 
   constructor() {}
 
@@ -22,7 +23,8 @@ export class OpcionesComponent implements OnInit {
       color: 'red',
       conectado: 'al INSTINTO',
       emocion: 'el MIEDO',
-      fondo: '../../../assets/chakras/rojo.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/rojo.png',
       opciones: [
         {
           titulo: 'Geobiología',
@@ -61,7 +63,8 @@ export class OpcionesComponent implements OnInit {
       color: '#ff7f00',
       conectado: 'al PLACER',
       emocion: 'la CULPA',
-      fondo: '../../../assets/chakras/orange.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/orange.png',
       opciones: [
         {
           titulo:
@@ -101,7 +104,8 @@ export class OpcionesComponent implements OnInit {
       color: '#ffad16',
       conectado: 'al PODER',
       emocion: 'la VERGUENZA',
-      fondo: '../../../assets/chakras/yellow.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/yellow.png',
       opciones: [
         {
           titulo:
@@ -170,7 +174,8 @@ export class OpcionesComponent implements OnInit {
       color: 'green',
       conectado: 'al AMOR',
       emocion: 'el DOLOR',
-      fondo: '../../../assets/chakras/green.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/green.png',
       opciones: [
         {
           titulo: 'Modo de Vida (Rutina Estresante, Falta de Alegría)',
@@ -204,7 +209,8 @@ export class OpcionesComponent implements OnInit {
       color: 'blue',
       conectado: 'a la VERDAD',
       emocion: 'la MENTIRA',
-      fondo: '../../../assets/chakras/blue.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/blue.png',
       opciones: [
         {
           titulo: 'Familia/Amigos (Secretos Ocultos, Mentiras, Silencio)',
@@ -243,7 +249,8 @@ export class OpcionesComponent implements OnInit {
       color: 'purple',
       conectado: 'a la PERCEPCION',
       emocion: 'la ILUSION',
-      fondo: '../../../assets/chakras/purple.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/purple.png',
       opciones: [
         {
           titulo: 'Ciencia Errónea (Materialismo, Negación de lo Espiritual)',
@@ -281,7 +288,8 @@ Físicamente puede manifestarse como presión en la frente, confusión mental, d
       color: 'violet',
       conectado: 'a la ENERGIA COSMICA',
       emocion: 'el APEGO',
-      fondo: '../../../assets/chakras/violet.png',
+      fondo:
+        'https://raw.githubusercontent.com/edwinkay/cartomancia/refs/heads/master/src/assets/chakras/violet.png',
       opciones: [
         {
           titulo: '1. Karma: Deudas o Aprendizajes no Resueltos',
@@ -336,6 +344,7 @@ Físicamente puede manifestarse como presión en la frente, confusión mental, d
     this.mosCha = true;
   }
   seleccionarChakra(chakra: any) {
+    this.fondo = chakra.fondo
     this.principal = false;
     this.seleccion = true;
     this.chakraSeleccionado = chakra;
