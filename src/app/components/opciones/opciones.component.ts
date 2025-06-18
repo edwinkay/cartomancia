@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-opciones',
@@ -13,9 +15,9 @@ export class OpcionesComponent implements OnInit {
   seleccion = false;
   objeto: any;
   modalChakra = false;
-  fondo:any
+  fondo: any;
 
-  constructor() {}
+  constructor(private afAuth: AngularFireAuth, private router: Router) {}
 
   CHAKRAS = [
     {
@@ -330,6 +332,10 @@ Físicamente puede manifestarse como presión en la frente, confusión mental, d
 
   ngOnInit(): void {}
 
+  salir() {
+    this.router.navigate(['/login']);
+  }
+
   volver() {
     this.ocultar = true;
     this.mosCha = false;
@@ -344,7 +350,7 @@ Físicamente puede manifestarse como presión en la frente, confusión mental, d
     this.mosCha = true;
   }
   seleccionarChakra(chakra: any) {
-    this.fondo = chakra.fondo
+    this.fondo = chakra.fondo;
     this.principal = false;
     this.seleccion = true;
     this.chakraSeleccionado = chakra;

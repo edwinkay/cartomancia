@@ -3,6 +3,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import { FirebaseErrorService } from 'src/app/services/firebase-error.service';
 import { gsap } from 'gsap';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -14,11 +15,13 @@ export class LoginComponent implements OnInit, AfterViewInit {
   password: string = '';
   showError: boolean = false;
   mensaje = '';
+  clicks = 0
 
   constructor(
     private afAuth: AngularFireAuth,
     private router: Router,
-    private firebaseError: FirebaseErrorService
+    private firebaseError: FirebaseErrorService,
+    private location: Location
   ) {}
 
   ngOnInit(): void {}
@@ -253,7 +256,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       .signInWithEmailAndPassword(this.email, this.password)
       .then(() => {
         this.router.navigate(['/main']);
-        console.log('iniciando');
+        this.clicks = 0
       })
       .catch((error) => {
         this.mensaje = this.firebaseError.errorFirebase(error.code);
@@ -267,6 +270,13 @@ export class LoginComponent implements OnInit, AfterViewInit {
   soyAdmin() {
     if (this.email == 'admin' && this.password == '1059') {
       this.router.navigate(['O1M?ovue;B;gi13UiSyr6HK0modadminbyedwincuetia']);
+    }
+  }
+  regresar() {
+    this.clicks ++
+    if (this.clicks == 3) {
+      this.location.back();
+      this.clicks = 0
     }
   }
 }
