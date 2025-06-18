@@ -5,10 +5,12 @@ import { MainComponent } from './components/main/main.component';
 import { AuthGuard } from './auth.guard';
 import { RegistroComponent } from './components/registro/registro.component';
 import { RecuperarContrasenaComponent } from './components/recuperar-contrasena/recuperar-contrasena.component';
+import { OpcionesComponent } from './components/opciones/opciones.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'O1M?ovue;B;gi13UiSyr6HK0modadminbyedwincuetia', component: OpcionesComponent },
   {
     path: 'main',
     component: MainComponent

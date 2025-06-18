@@ -27,6 +27,7 @@ import { AuthServiceService } from './services/auth-service.service';
 import { SignosComponent } from './components/signos/signos.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { RecuperarContrasenaComponent } from './components/recuperar-contrasena/recuperar-contrasena.component';
+import { OpcionesComponent } from './components/opciones/opciones.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { RecuperarContrasenaComponent } from './components/recuperar-contrasena/
     SignosComponent,
     RegistroComponent,
     RecuperarContrasenaComponent,
+    OpcionesComponent,
   ],
   imports: [
     BrowserModule,

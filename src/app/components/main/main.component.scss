@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .margin {
   margin: 15px;
@@ -13,12 +14,6 @@
   align-items: center;
   padding: 0 15px;
 }
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
 .margin {
   min-height: 100%;
   display: flex;

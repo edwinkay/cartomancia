@@ -1,16 +1,21 @@
 <div class="head">
-    <div>
-      <h2 style="margin: 0;">Hola {{ usuario?.nombre || "desconocido" }}</h2>
-      <h4 class="signo">{{ signoZodiacal }}</h4>
-    </div>
-
-    <h2 (click)="salir()">Salir</h2>
+  <div>
+    <h2 style="margin: 0">Hola {{ usuario?.nombre || "desconocido" }}</h2>
+    <h4 class="signo">{{ signoZodiacal }}</h4>
   </div>
+
+  <h2 (click)="salir()">Salir</h2>
+</div>
 <div class="margin">
   <div class="ajustar">
-    <div class="col-md-4 text-center">
+    <div class="col-md-6 text-center">
       <button (click)="mostrarContenido('lectura')" class="btn btn-primary">
         Lectura virtual
+      </button>
+    </div>
+    <div  class="col-md-6">
+      <button (click)="mostrarContenido('signos')" class="btn btn-primary">
+        Compatibilidad de signos
       </button>
     </div>
     <div class="col-md-4 text-center">
@@ -23,11 +28,6 @@
         Respuestas completas
       </button>
     </div>
-  </div>
-  <div style="margin-top: 8px" class="col-md-12 text-center">
-    <button (click)="mostrarContenido('signos')" class="btn btn-primary">
-      Signos
-    </button>
   </div>
 
   <div class="row margin">

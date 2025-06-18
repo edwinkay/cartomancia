@@ -42,6 +42,7 @@ export class RegistroComponent implements OnInit {
             nombre: this.usuario,
             correo: this.email,
             pass: this.password,
+            permiso: 'usuario',
             fecha: this.fechaNacimiento
               ? firebase.firestore.Timestamp.fromDate(this.fechaNacimiento)
               : null,

@@ -12,7 +12,8 @@ export class MainComponent implements OnInit {
   user: any;
   correo: any;
   usuario: any;
-  signoZodiacal: string = ''; // Almacena el signo zodiacal
+  signoZodiacal: string = '';
+  acceso = false
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -41,9 +42,11 @@ export class MainComponent implements OnInit {
       // Si se encuentra el usuario, calcular el signo zodiacal
       if (this.usuario && this.usuario.fecha) {
         this.signoZodiacal = this.getZodiacSign(this.usuario.fecha);
-        console.log('Signo zodiacal:', this.signoZodiacal);
       } else {
         console.log('Usuario o fecha no encontrado');
+      }
+      if (this.usuario === 'admin') {
+        this.acceso = true
       }
     });
   }
